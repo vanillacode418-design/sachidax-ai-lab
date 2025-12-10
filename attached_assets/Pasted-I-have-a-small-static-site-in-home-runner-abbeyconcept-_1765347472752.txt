@@ -1,0 +1,44 @@
+I have a small static site in /home/runner/abbeyconcept-main with index.html, services.html, styles.css and script.js. Please scan the entire repo and produce a complete production-ready upgrade + multi-page expansion and a build pipeline. Follow these tasks exactly and commit changes to files in-place:
+
+1) Repo analysis:
+  - Read every file and summarize the tech stack and any likely JS/CSS frameworks used.
+  - List missing pages referenced by navigation and create them if absent.
+
+2) Create missing pages:
+  - Add these pages if they aren't present: pricing.html, automation-tools.html, virtual-use-cases.html, contact.html, about.html, blog.html.
+  - Each new page must:
+    - Use the same header/footer/navigation as index.html,
+    - Have unique H1 and meta tags,
+    - Include a placeholder main section relevant to the page name.
+
+3) Accessibility & SEO:
+  - Ensure `<html lang="en">` and proper meta viewport exist.
+  - Add meta description tags and Open Graph tags to all pages.
+  - Generate `sitemap.xml` and `robots.txt`.
+
+4) Performance & "10x loaded" improvements:
+  - Inline critical CSS (above-the-fold) in each HTML head, move the rest into `styles.css`.
+  - Add `<link rel="preload">` for the font(s) and any large critical resources and add `<link rel="preconnect">` for external domains used (like Google Fonts).
+  - Add `defer` or `async` to non-essential scripts and mark large images with `loading="lazy"`.
+  - Minify CSS and JS in a `npm run build` pipeline (esbuild or terser), and minify HTML into `dist/`.
+  - Add a small service worker for offline caching and an HTTP caching policy (Cache-Control meta comment in README).
+  - Optimize any SVGs or images using SVGO instructions and add WebP fallbacks if images exist.
+
+5) UX / new features ("10x loaded features"):
+  - Add a responsive mobile-first layout tweak if necessary (improve nav toggling).
+  - Add a reusable hero component section and a component-style card for services that can be reused across pages.
+  - Add a light "site search" (client-side) that indexes page headings & shows results (small JS).
+  - Add contact form markup that POSTs to `/api/contact` (explain how to wire serverless endpoint or Netlify Forms).
+
+6) Dev & Deploy:
+  - Add package.json scripts: `dev` (serve), `build`, `format`, `lint`.
+  - Add `.gitignore`, `README.md` with instructions and a sample `replit.nix` or Replit start command.
+  - Add a simple GitHub Actions workflow `ci.yml` that runs `npm ci` and `npm run build` and can deploy to Netlify (optional).
+
+7) Output & Diff:
+  - For each file changed, show a unified diff patch and explain in 2-3 lines why you changed it.
+  - Put built output in `/dist` when `npm run build` is executed.
+  - If you cannot perform an action (e.g., real image optimization requiring external network), explain the missing step and provide exact commands the developer should run locally.
+
+Make changes directly in the repo when possible. Keep everything static (no backend required) and keep dependencies minimal. After finishing, run `npm run build` and show a list of files created in `dist/` and the sizes.
+

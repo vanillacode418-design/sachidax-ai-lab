@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kaizen Automation Hub — Dashboard</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared stylesheet (Attempt 2 will deliver styles.css) -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Page metadata for consistent theme -->
+  <meta name="description" content="Kaizen — Voice AI, Text AI, Virtual Agents, Automation Workflows and Dashboards" />
+</head>
+<body class="vapi-dark">
+
+  <div id="app" class="app">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" role="navigation" aria-label="Primary">
+      <div class="sidebar-top">
+        <div class="brand">
+          <span class="logo">KAIZEN</span>
+        </div>
+        <div class="brand-sub">Automation Hub</div>
+      </div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav-link active" href="index.html" data-page="home"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
+        <a class="nav-link" href="services.html" data-page="services"><span class="nav-icon">🛠️</span><span class="nav-text">Services</span></a>
+        <a class="nav-link" href="pricing.html" data-page="pricing"><span class="nav-icon">💠</span><span class="nav-text">Pricing</span></a>
+        <a class="nav-link" href="automation-tools.html" data-page="tools"><span class="nav-icon">🔌</span><span class="nav-text">Automation Tools</span></a>
+        <a class="nav-link" href="virtual-use-cases.html" data-page="usecases"><span class="nav-icon">📞</span><span class="nav-text">Use Cases</span></a>
+        <a class="nav-link" href="contact.html" data-page="contact"><span class="nav-icon">✉️</span><span class="nav-text">Contact</span></a>
+        <a class="nav-link" href="policies.html" data-page="policies"><span class="nav-icon">📜</span><span class="nav-text">Policies</span></a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="cta-card">
+          <div class="cta-title">Book Free Consultation</div>
+          <div class="cta-sub">Schedule a walkthrough</div>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-primary">Request</a>
+          </div>
+        </div>
+
+        <div class="sidebar-footer">© Kaizen</div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main" role="main" aria-labelledby="page-title">
+      <!-- TOPBAR -->
+      <header class="topbar" role="banner">
+        <div class="top-left">
+          <h1 id="page-title" class="page-title">Home</h1>
+          <div class="page-sub">Welcome back to Kaizen — build voice-first automation faster.</div>
+        </div>
+
+        <div class="top-actions">
+          <a class="top-btn btn-outline" href="#" id="docs-link">Docs</a>
+          <a class="top-btn btn-primary" href="#" id="open-dashboard">Open Dashboard</a>
+        </div>
+      </header>
+
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-inner">
+          <div class="hero-left">
+            <h2 id="hero-heading" class="hero-heading">Voice AI agents for developers</h2>
+            <p class="hero-sub">Kaizen delivers voice AI, text AI, virtual agents, automation workflows, APIs and dashboards — built for reliability and privacy-first deployments.</p>
+
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="#" id="signup-btn">Sign up</a>
+              <a class="btn btn-outline" href="#" id="read-docs">Read the docs</a>
+            </div>
+
+            <ul class="hero-features" aria-hidden="true">
+              <li>Multilingual IVR & synthesis</li>
+              <li>Contextual assistants & summarization</li>
+              <li>Deployable templates & integrations</li>
+            </ul>
+          </div>
+
+          <aside class="hero-right" aria-hidden="true">
+            <div class="talk-card">
+              <div class="talk-badge">TALK TO KAIZEN</div>
+              <button class="oval-talk" id="talk-kaizen">🎙️ Talk to Kaizen</button>
+            </div>
+
+            <!-- Decorative audio wave / equalizer -->
+            <div class="wave" aria-hidden="true">
+              <div class="eq">
+                <span class="bar" style="height:22px"></span>
+                <span class="bar" style="height:36px"></span>
+                <span class="bar" style="height:18px"></span>
+                <span class="bar" style="height:28px"></span>
+                <span class="bar" style="height:44px"></span>
+                <span class="bar" style="height:10px"></span>
+                <span class="bar" style="height:30px"></span>
+                <span class="bar" style="height:20px"></span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- SERVICES OVERVIEW -->
+      <section class="services" aria-labelledby="services-heading">
+        <div class="section-header">
+          <h3 id="services-heading">Services</h3>
+          <p class="section-sub">Voice AI, Text AI, Virtual Agents, Automation Workflows, APIs & IoT dashboards.</p>
+        </div>
+
+        <div class="services-grid" role="list">
+          <article class="service-card" role="listitem" data-modal="service" data-service="Voice AI">
+            <div class="service-head">
+              <div class="service-icon">🗣️</div>
+              <h4>Voice AI</h4>
+            </div>
+            <p>Multilingual speech synthesis & recognition, IVR, and telephony integrations.</p>
+            <div class="service-actions">
+              <button class="btn btn-ghost open-service" data-service="Voice AI">Preview</button>
+            </div>
+          </article>
+
+          <article class="service-card" role="listitem" data-modal="service" data-service="Text AI">
+            <div class="service-head">
+              <div class="service-icon">✍️</div>
+              <h4>Text AI</h4>
+            </div>
+            <p>Contextual assistants, summarization, classification and natural language APIs.</p>
+            <div class="service-actions">
+              <button class="btn btn-ghost open-service" data-service="Text AI">Preview</button>
+            </div>
+          </article>
+
+          <article class="service-card" role="listitem" data-modal="service" data-service="Virtual Agents">
+            <div class="service-head">
+              <div class="service-icon">🤖</div>
+              <h4>Virtual Agents</h4>
+            </div>
+            <p>Dialog flows, webhook integrations and stateful agents for calls & chat.</p>
+            <div class="service-actions">
+              <button class="btn btn-ghost open-service" data-service="Virtual Agents">Preview</button>
+            </div>
+          </article>
+
+          <article class="service-card" role="listitem" data-modal="service" data-service="Automation Workflows">
+            <div class="service-head">
+              <div class="service-icon">🔁</div>
+              <h4>Automation Workflows</h4>
+            </div>
+            <p>Connectors, builders, and templates to automate voice and data flows.</p>
+            <div class="service-actions">
+              <button class="btn btn-ghost open-service" data-service="Automation Workflows">Preview</button>
+            </div>
+          </article>
+
+          <article class="service-card" role="listitem" data-modal="service" data-service="APIs & SaaS">
+            <div class="service-head">
+              <div class="service-icon">🔗</div>
+              <h4>APIs & SaaS</h4>
+            </div>
+            <p>Robust APIs, SDKs and platform hosting to plug Kaizen into your product.</p>
+            <div class="service-actions">
+              <button class="btn btn-ghost open-service" data-service="APIs & SaaS">Preview</button>
+            </div>
+          </article>
+
+          <article class="service-card" role="listitem" data-modal="service" data-service="IoT & Dashboards">
+            <div class="service-head">
+              <div class="service-icon">📊</div>
+              <h4>IoT & Dashboards</h4>
+            </div>
+            <p>Real-time telemetry, dashboards and smart triggers for voice automations.</p>
+            <div class="service-actions">
+              <button class="btn btn-ghost open-service" data-service="IoT & Dashboards">Preview</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- VIRTUAL CALLING USE CASES (50+) -->
+      <section class="use-cases" aria-labelledby="usecases-heading">
+        <div class="section-header">
+          <h3 id="usecases-heading">Virtual Calling Use Cases</h3>
+          <p class="section-sub">50+ ready-to-deploy call flows and templates for every industry. Click any card to preview the template, listen to a demo and deploy.</p>
+        </div>
+
+        <div class="grid usecases-grid" role="list" id="usecases-grid">
+          <!-- Listing 50+ full-named cards as required (do not abbreviate) -->
+          <!-- 1-50+ -->
+          <article class="card case-card" role="listitem" data-case="Sales calls">
+            <h4 class="case-title">Sales calls</h4>
+            <p class="case-sub">Outbound sales conversations that introduce product features and book demos.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Sales calls">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Lead qualification">
+            <h4 class="case-title">Lead qualification</h4>
+            <p class="case-sub">Automated questions to validate lead intent and route to sales.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Lead qualification">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Customer support">
+            <h4 class="case-title">Customer support</h4>
+            <p class="case-sub">First-line troubleshooting and ticket creation via voice flows.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Customer support">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Emergency helpdesk">
+            <h4 class="case-title">Emergency helpdesk</h4>
+            <p class="case-sub">Critical incident call flows for escalation and response coordination.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Emergency helpdesk">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Appointment scheduling">
+            <h4 class="case-title">Appointment scheduling</h4>
+            <p class="case-sub">Book and confirm appointments automatically through voice or SMS.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Appointment scheduling">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="COD verification">
+            <h4 class="case-title">COD verification</h4>
+            <p class="case-sub">Confirm Cash-on-Delivery orders with automated verification calls.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="COD verification">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Medicine reminders">
+            <h4 class="case-title">Medicine reminders</h4>
+            <p class="case-sub">Timely reminders for patients to take medication as prescribed.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Medicine reminders">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Clinic reminders">
+            <h4 class="case-title">Clinic reminders</h4>
+            <p class="case-sub">Reminder calls for upcoming clinic visits and follow-ups.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Clinic reminders">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Class notifications">
+            <h4 class="case-title">Class notifications</h4>
+            <p class="case-sub">Send class schedule changes and cancellations by automated calls.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Class notifications">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Payment reminders">
+            <h4 class="case-title">Payment reminders</h4>
+            <p class="case-sub">Automated calls reminding customers about due payments and invoices.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Payment reminders">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Delivery confirmation">
+            <h4 class="case-title">Delivery confirmation</h4>
+            <p class="case-sub">Confirm deliveries and capture recipient acknowledgements automatically.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Delivery confirmation">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Restaurant booking">
+            <h4 class="case-title">Restaurant booking</h4>
+            <p class="case-sub">Voice booking flows for reservations and confirmations.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Restaurant booking">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Travel agent calls">
+            <h4 class="case-title">Travel agent calls</h4>
+            <p class="case-sub">Automated itineraries, booking confirmations and reminders for travelers.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Travel agent calls">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="School announcements">
+            <h4 class="case-title">School announcements</h4>
+            <p class="case-sub">Broadcast important school notices and emergency alerts to parents and staff.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="School announcements">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Fitness trainer reminders">
+            <h4 class="case-title">Fitness trainer reminders</h4>
+            <p class="case-sub">Automated session reminders and motivational follow-ups for trainees.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Fitness trainer reminders">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Real estate follow-ups">
+            <h4 class="case-title">Real estate follow-ups</h4>
+            <p class="case-sub">Follow up with prospects after property viewings or open houses.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Real estate follow-ups">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Loan reminder calls">
+            <h4 class="case-title">Loan reminder calls</h4>
+            <p class="case-sub">Notify borrowers of upcoming installments and due dates.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Loan reminder calls">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="HR screening calls">
+            <h4 class="case-title">HR screening calls</h4>
+            <p class="case-sub">Initial candidate screening and scheduling via automated voice flows.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="HR screening calls">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Event RSVP calls">
+            <h4 class="case-title">Event RSVP calls</h4>
+            <p class="case-sub">Collect RSVP confirmations and dietary preferences by voice.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Event RSVP calls">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Automated surveys">
+            <h4 class="case-title">Automated surveys</h4>
+            <p class="case-sub">Run voice or IVR surveys and collect structured responses.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Automated surveys">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Ticket booking confirmation">
+            <h4 class="case-title">Ticket booking confirmation</h4>
+            <p class="case-sub">Confirm ticket purchases and deliver e-ticket instructions.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Ticket booking confirmation">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Subscription renewal reminders">
+            <h4 class="case-title">Subscription renewal reminders</h4>
+            <p class="case-sub">Notices for upcoming renewals and upsell opportunities.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Subscription renewal reminders">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Utility bill reminders">
+            <h4 class="case-title">Utility bill reminders</h4>
+            <p class="case-sub">Automated reminders for utility payments like electricity and water.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Utility bill reminders">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Insurance follow-ups">
+            <h4 class="case-title">Insurance follow-ups</h4>
+            <p class="case-sub">Policy renewal, claim status and documentation follow-ups via calls.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Insurance follow-ups">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Warranty checks">
+            <h4 class="case-title">Warranty checks</h4>
+            <p class="case-sub">Confirm warranty registrations and remind on warranty expirations.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Warranty checks">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Feedback collection calls">
+            <h4 class="case-title">Feedback collection calls</h4>
+            <p class="case-sub">Collect NPS and detailed feedback from customers after a transaction.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Feedback collection calls">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Product return scheduling">
+            <h4 class="case-title">Product return scheduling</h4>
+            <p class="case-sub">Schedule collection slots and confirm return logistics.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Product return scheduling">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Subscription activation calls">
+            <h4 class="case-title">Subscription activation calls</h4>
+            <p class="case-sub">Activate subscriptions and walk users through onboarding steps.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Subscription activation calls">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Outage notifications">
+            <h4 class="case-title">Outage notifications</h4>
+            <p class="case-sub">Broadcast outages and ETA to affected users automatically.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Outage notifications">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Maintenance alerts">
+            <h4 class="case-title">Maintenance alerts</h4>
+            <p class="case-sub">Notify stakeholders about scheduled maintenance and expected disruptions.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Maintenance alerts">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Inventory restock alerts">
+            <h4 class="case-title">Inventory restock alerts</h4>
+            <p class="case-sub">Alert procurement and sales teams when items reach restock thresholds.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Inventory restock alerts">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Donor outreach calls">
+            <h4 class="case-title">Donor outreach calls</h4>
+            <p class="case-sub">Engage donors for campaigns, updates and fundraising reminders.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Donor outreach calls">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Political outreach calls">
+            <h4 class="case-title">Political outreach calls</h4>
+            <p class="case-sub">Constituent outreach for information sharing and event invites.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Political outreach calls">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="NGO volunteer coordination">
+            <h4 class="case-title">NGO volunteer coordination</h4>
+            <p class="case-sub">Call flows for volunteer scheduling, logistic coordination and reminders.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="NGO volunteer coordination">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Product launch calls">
+            <h4 class="case-title">Product launch calls</h4>
+            <p class="case-sub">Engage early adopters and media contacts for launch announcements.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Product launch calls">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Survey recruitment calls">
+            <h4 class="case-title">Survey recruitment calls</h4>
+            <p class="case-sub">Recruit and schedule participants for research and surveys.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Survey recruitment calls">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Debt collection reminders">
+            <h4 class="case-title">Debt collection reminders</h4>
+            <p class="case-sub">Gentle reminders and repayment scheduling with compliance options.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Debt collection reminders">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Appointment confirmations">
+            <h4 class="case-title">Appointment confirmations</h4>
+            <p class="case-sub">Automated confirmations and rescheduling options for bookings.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Appointment confirmations">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Candidate interview reminders">
+            <h4 class="case-title">Candidate interview reminders</h4>
+            <p class="case-sub">Reminder calls with instructions and prep materials for candidates.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Candidate interview reminders">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Customer NPS calls">
+            <h4 class="case-title">Customer NPS calls</h4>
+            <p class="case-sub">Collect Net Promoter Score and short feedback via a voice call.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Customer NPS calls">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Order cancellation recovery">
+            <h4 class="case-title">Order cancellation recovery</h4>
+            <p class="case-sub">Automated retention flow to recover cancelled orders with offers.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Order cancellation recovery">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Cross-sell calls">
+            <h4 class="case-title">Cross-sell calls</h4>
+            <p class="case-sub">Personalized cross-sell dialogs based on purchase history.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Cross-sell calls">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Upsell appointment setting">
+            <h4 class="case-title">Upsell appointment setting</h4>
+            <p class="case-sub">Automated appointment setting for higher-tier offers and demos.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Upsell appointment setting">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Class attendance reminders">
+            <h4 class="case-title">Class attendance reminders</h4>
+            <p class="case-sub">Automated calls to encourage attendance and reduce no-shows.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Class attendance reminders">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Electricity usage alerts">
+            <h4 class="case-title">Electricity usage alerts</h4>
+            <p class="case-sub">Notify customers about high usage and provide energy saving tips.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Electricity usage alerts">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Water usage alerts">
+            <h4 class="case-title">Water usage alerts</h4>
+            <p class="case-sub">Warn customers about unusual water consumption or leaks.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Water usage alerts">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Smart-meter thresholds">
+            <h4 class="case-title">Smart-meter thresholds</h4>
+            <p class="case-sub">Call triggers for smart meter thresholds and automated billing notices.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Smart-meter thresholds">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Fleet dispatch alerts">
+            <h4 class="case-title">Fleet dispatch alerts</h4>
+            <p class="case-sub">Notify drivers with route updates, ETAs and dispatch instructions.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Fleet dispatch alerts">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="Security alarm follow-ups">
+            <h4 class="case-title">Security alarm follow-ups</h4>
+            <p class="case-sub">Automated follow-up checks after alarm triggers to confirm status.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="Security alarm follow-ups">Open</button></div>
+          </article>
+
+          <article class="card case-card" role="listitem" data-case="On-call shift notifications">
+            <h4 class="case-title">On-call shift notifications</h4>
+            <p class="case-sub">Alert on-call staff of assignments, shift swaps and urgent incidents.</p>
+            <div class="case-actions"><button class="btn btn-ghost open-case" data-case="On-call shift notifications">Open</button></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CLIENT LOGO STRIP -->
+      <section class="logo-strip" aria-label="Trusted by">
+        <div class="logo-item">UnityAI</div>
+        <div class="logo-item">New York Life</div>
+        <div class="logo-item">Intuit</div>
+        <div class="logo-item">Delphi</div>
+        <div class="logo-item">Housecall Pro</div>
+        <div class="logo-item">Cherry</div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner">
+          <div>© Kaizen Automation Hub</div>
+          <div class="muted">Built with care — All content preserved</div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- MODAL SHELL (single modal node reused by JS) -->
+  <div id="modal-root" class="modal-root" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Preview">
+      <button class="modal-close" aria-label="Close modal" data-close="true">&times;</button>
+
+      <!-- Modal content is populated by script.js based on data attributes -->
+      <div class="modal-content" id="modal-content">
+        <!-- Example structure script will inject:
+           <h2 class="modal-title">...</h2>
+           <p class="modal-desc">...</p>
+           <div class="modal-audio-player"> ... audio UI ... </div>
+           <div class="modal-actions"><button class="btn btn-primary">Deploy Template</button></div>
+        -->
+      </div>
+    </div>
+  </div>
+
+  <!-- AUDIO ELEMENT (hidden, reused) -->
+  <audio id="demo-audio" preload="none"></audio>
+
+  <!-- Minimal script hooks: load shared script (Attempt 3 will deliver script.js) -->
+  <script src="script.js" defer></script>
+</body>
+</html>

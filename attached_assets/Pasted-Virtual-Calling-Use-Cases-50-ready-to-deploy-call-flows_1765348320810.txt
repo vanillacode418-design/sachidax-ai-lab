@@ -1,0 +1,203 @@
+Virtual Calling Use Cases
+50+ ready-to-deploy call flows and templates for every industry. Click any card to preview the template, listen to a demo and deploy.
+
+Sales calls
+Outbound sales conversations that introduce product features and book demos.
+
+Open
+Lead qualification
+Automated questions to validate lead intent and route to sales.
+
+Open
+Customer support
+First-line troubleshooting and ticket creation via voice flows.
+
+Open
+Emergency helpdesk
+Critical incident call flows for escalation and response coordination.
+
+Open
+Appointment scheduling
+Book and confirm appointments automatically through voice or SMS.
+
+Open
+COD verification
+Confirm Cash-on-Delivery orders with automated verification calls.
+
+Open
+Medicine reminders
+Timely reminders for patients to take medication as prescribed.
+
+Open
+Clinic reminders
+Reminder calls for upcoming clinic visits and follow-ups.
+
+Open
+Class notifications
+Send class schedule changes and cancellations by automated calls.
+
+Open
+Payment reminders
+Automated calls reminding customers about due payments and invoices.
+
+Open
+Delivery confirmation
+Confirm deliveries and capture recipient acknowledgements automatically.
+
+Open
+Restaurant booking
+Voice booking flows for reservations and confirmations.
+
+Open
+Travel agent calls
+Automated itineraries, booking confirmations and reminders for travelers.
+
+Open
+School announcements
+Broadcast important school notices and emergency alerts to parents and staff.
+
+Open
+Fitness trainer reminders
+Automated session reminders and motivational follow-ups for trainees.
+
+Open
+Real estate follow-ups
+Follow up with prospects after property viewings or open houses.
+
+Open
+Loan reminder calls
+Notify borrowers of upcoming installments and due dates.
+
+Open
+HR screening calls
+Initial candidate screening and scheduling via automated voice flows.
+
+Open
+Event RSVP calls
+Collect RSVP confirmations and dietary preferences by voice.
+
+Open
+Automated surveys
+Run voice or IVR surveys and collect structured responses.
+
+Open
+Ticket booking confirmation
+Confirm ticket purchases and deliver e-ticket instructions.
+
+Open
+Subscription renewal reminders
+Notices for upcoming renewals and upsell opportunities.
+
+Open
+Utility bill reminders
+Automated reminders for utility payments like electricity and water.
+
+Open
+Insurance follow-ups
+Policy renewal, claim status and documentation follow-ups via calls.
+
+Open
+Warranty checks
+Confirm warranty registrations and remind on warranty expirations.
+
+Open
+Feedback collection calls
+Collect NPS and detailed feedback from customers after a transaction.
+
+Open
+Product return scheduling
+Schedule collection slots and confirm return logistics.
+
+Open
+Subscription activation calls
+Activate subscriptions and walk users through onboarding steps.
+
+Open
+Outage notifications
+Broadcast outages and ETA to affected users automatically.
+
+Open
+Maintenance alerts
+Notify stakeholders about scheduled maintenance and expected disruptions.
+
+Open
+Inventory restock alerts
+Alert procurement and sales teams when items reach restock thresholds.
+
+Open
+Donor outreach calls
+Engage donors for campaigns, updates and fundraising reminders.
+
+Open
+Political outreach calls
+Constituent outreach for information sharing and event invites.
+
+Open
+NGO volunteer coordination
+Call flows for volunteer scheduling, logistic coordination and reminders.
+
+Open
+Product launch calls
+Engage early adopters and media contacts for launch announcements.
+
+Open
+Survey recruitment calls
+Recruit and schedule participants for research and surveys.
+
+Open
+Debt collection reminders
+Gentle reminders and repayment scheduling with compliance options.
+
+Open
+Appointment confirmations
+Automated confirmations and rescheduling options for bookings.
+
+Open
+Candidate interview reminders
+Reminder calls with instructions and prep materials for candidates.
+
+Open
+Customer NPS calls
+Collect Net Promoter Score and short feedback via a voice call.
+
+Open
+Order cancellation recovery
+Automated retention flow to recover cancelled orders with offers.
+
+Open
+Cross-sell calls
+Personalized cross-sell dialogs based on purchase history.
+
+Open
+Upsell appointment setting
+Automated appointment setting for higher-tier offers and demos.
+
+Open
+Class attendance reminders
+Automated calls to encourage attendance and reduce no-shows.
+
+Open
+Electricity usage alerts
+Notify customers about high usage and provide energy saving tips.
+
+Open
+Water usage alerts
+Warn customers about unusual water consumption or leaks.
+
+Open
+Smart-meter thresholds
+Call triggers for smart meter thresholds and automated billing notices.
+
+Open
+Fleet dispatch alerts
+Notify drivers with route updates, ETAs and dispatch instructions.
+
+Open
+Security alarm follow-ups
+Automated follow-up checks after alarm triggers to confirm status.
+
+Open
+On-call shift notifications
+Alert on-call staff of assignments, shift swaps and urgent incidents.
+
+Open

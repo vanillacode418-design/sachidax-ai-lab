@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kaizen — Services</title>
+  <meta name="description" content="Kaizen Services — Voice AI, Text AI, Virtual Agents, Automation Workflows, APIs, IoT & Dashboards" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Shared stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="vapi-dark">
+  <div id="app" class="app">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" role="navigation" aria-label="Primary">
+      <div class="sidebar-top">
+        <div class="brand">
+          <span class="logo">KAIZEN</span>
+        </div>
+        <div class="brand-sub">Automation Hub</div>
+      </div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav-link" href="index.html" data-page="home"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></a>
+        <a class="nav-link active" href="services.html" data-page="services"><span class="nav-icon">🛠️</span><span class="nav-text">Services</span></a>
+        <a class="nav-link" href="pricing.html" data-page="pricing"><span class="nav-icon">💠</span><span class="nav-text">Pricing</span></a>
+        <a class="nav-link" href="automation-tools.html" data-page="tools"><span class="nav-icon">🔌</span><span class="nav-text">Automation Tools</span></a>
+        <a class="nav-link" href="virtual-use-cases.html" data-page="usecases"><span class="nav-icon">📞</span><span class="nav-text">Use Cases</span></a>
+        <a class="nav-link" href="contact.html" data-page="contact"><span class="nav-icon">✉️</span><span class="nav-text">Contact</span></a>
+        <a class="nav-link" href="policies.html" data-page="policies"><span class="nav-icon">📜</span><span class="nav-text">Policies</span></a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="cta-card">
+          <div class="cta-title">Book Free Consultation</div>
+          <div class="cta-sub">Schedule a walkthrough</div>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-primary">Request</a>
+          </div>
+        </div>
+        <div class="sidebar-footer">© Kaizen</div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main" role="main" aria-labelledby="page-title">
+      <!-- TOPBAR -->
+      <header class="topbar" role="banner">
+        <div class="top-left">
+          <h1 id="page-title" class="page-title">Services</h1>
+          <div class="page-sub">Explore Kaizen's capabilities — voice, text, virtual agents, workflows, APIs and IoT dashboards.</div>
+        </div>
+
+        <div class="top-actions">
+          <a class="top-btn btn-outline" href="#" id="docs-link">Docs</a>
+          <a class="top-btn btn-primary" href="#" id="open-dashboard">Open Dashboard</a>
+        </div>
+      </header>
+
+      <!-- Services hero summary -->
+      <section class="hero" aria-labelledby="services-hero-heading">
+        <div class="hero-inner">
+          <div class="hero-left">
+            <h2 id="services-hero-heading" class="hero-heading">Services & Capabilities</h2>
+            <p class="hero-sub">Everything you need to build production-grade voice and automation experiences: TTS/TTS variants, conversational flows, integrations, and monitoring.</p>
+
+            <div class="hero-ctas">
+              <a class="btn btn-primary" href="contact.html">Get a Demo</a>
+              <a class="btn btn-outline" href="pricing.html">View Pricing</a>
+            </div>
+          </div>
+
+          <aside class="hero-right" aria-hidden="true">
+            <div class="talk-card">
+              <div class="talk-badge">SPEAK & LISTEN</div>
+              <button class="oval-talk" id="talk-kaizen">🎙️ Try Voice Demo</button>
+            </div>
+
+            <div class="wave" aria-hidden="true">
+              <div class="eq">
+                <span class="bar" style="height:18px"></span>
+                <span class="bar" style="height:28px"></span>
+                <span class="bar" style="height:16px"></span>
+                <span class="bar" style="height:24px"></span>
+                <span class="bar" style="height:40px"></span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Service categories grid -->
+      <section class="services" aria-labelledby="categories-heading">
+        <div class="section-header">
+          <h3 id="categories-heading">Categories</h3>
+          <p class="section-sub">Click any item to open a detailed preview, features and audio sample.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Voice AI -->
+          <article class="service-card" role="article" aria-labelledby="svc-voice-heading">
+            <div class="service-head">
+              <div class="service-icon">🗣️</div>
+              <h4 id="svc-voice-heading">Voice AI</h4>
+            </div>
+            <p>Multilingual speech synthesis, neural TTS voices, prosody control, telephony integration and SSML support.</p>
+            <div class="service-actions">
+              <button class="btn btn-ghost open-service" data-service="Voice AI">Overview</button>
+              <button class="btn btn-ghost open-service" data-service="Voice AI">Audio Demo</button>
+            </div>
+          </article>
+
+          <!-- Text AI -->
+          <article class="service-card" role="article" aria-labelledby="svc-text-heading">
+            <div class="service-head">
+              <div class="service-icon">✍️</div>
+              <h4 id="svc-text-heading">Text AI</h4>
+            </div>
+            <p>Contextual assistants, summarization, entity extraction, embeddings and multi-turn dialog capabilities.</p>
+            <div class="service-actions">
+              <button class="btn btn-ghost open-service" data-service="Text AI">Overview</button>
+              <button class="btn btn-ghost open-service" data-service="Text AI">Examples</button>
+            </div>
+          </article>
+
+          <!-- Virtual Agents -->
+          <article class="service-card" role="article" aria-labelledby="svc-agents-heading">
+            <div class="service-head">
+              <div class="service-icon">🤖</div>
+              <h4 id="svc-agents-heading">Virtual Agents</h4>
+            </div>
+            <p>Flow designer, state management, webhook actions, CRM connectors and fallback routing.</p>
+            <div class="service-actions">
+              <button class="btn btn-ghost open-service" data-service="Virtual Agents">Overview</button>
+              <button class="btn btn-ghost open-service" data-service="Virtual Agents">Try Sample</button>
+            </div>
+          </article>
+
+          <!-- Automation Workflows -->
+          <article class="service-card" role="article" aria-labelledby="svc-workflows-heading">
+            <div class="service-head">
+              <div class="service-icon">🔁</div>
+              <h4 id="svc-workflows-heading">Automation Workflows</h4>
+            </div>
+            <p>Builder UI, triggers, scheduling, retries, error handling and observability for production automations.</p>
+            <div class="service-actions">
+              <button class="btn btn-ghost open-service" data-service="Automation Workflows">Overview</button>
+              <button class="btn btn-ghost open-service" data-service="Automation Workflows">Templates</button>
+            </div>
+          </article>
+
+          <!-- APIs & SDKs -->
+          <article class="service-card" role="article" aria-labelledby="svc-apis-heading">
+            <div class="service-head">
+              <div class="service-icon">🔗</div>
+              <h4 id="svc-apis-heading">APIs & SDKs</h4>
+            </div>
+            <p>RESTful APIs, realtime websockets, SDKs (Node, Python, Java) and secure auth for integrating Kaizen into your products.</p>
+            <div class="service-actions">
+              <button class="btn btn-ghost open-service" data-service="APIs & SaaS">Documentation</button>
+              <button class="btn btn-ghost" onclick="location.href='contact.html'">Request API Key</button>
+            </div>
+          </article>
+
+          <!-- IoT & Dashboards -->
+          <article class="service-card" role="article" aria-labelledby="svc-iot-heading">
+            <div class="service-head">
+              <div class="service-icon">📊</div>
+              <h4 id="svc-iot-heading">IoT & Dashboards</h4>
+            </div>
+            <p>Device ingestion, telemetry pipelines, thresholds and low-latency dashboards for operational automation and voice triggers.</p>
+            <div class="service-actions">
+              <button class="btn btn-ghost open-service" data-service="IoT & Dashboards">Overview</button>
+              <a class="btn btn-ghost" href="automation-tools.html">View Tools</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Expanded items (each item provides a "More" panel with features + examples) -->
+      <section class="expanded" aria-labelledby="expanded-heading" style="margin-top:18px">
+        <div class="section-header">
+          <h3 id="expanded-heading">Featured Services</h3>
+          <p class="section-sub">Deep-dive previews, feature lists and use-case examples for the main categories.</p>
+        </div>
+
+        <div class="k-grid-2">
+          <!-- Voice AI details -->
+          <div class="card" role="region" aria-labelledby="voice-features">
+            <h4 id="voice-features">Voice AI — Features</h4>
+            <ul>
+              <li>Neural TTS with multiple voices & emotion controls</li>
+              <li>SSML and prosody tuning</li>
+              <li>Telephony & SIP integrations (inbound/outbound)</li>
+              <li>Low-latency streaming for realtime agents</li>
+              <li>On-prem or private cloud deployment options</li>
+            </ul>
+            <div style="margin-top:8px">
+              <button class="btn btn-ghost open-service" data-service="Voice AI">Open Sample</button>
+            </div>
+          </div>
+
+          <!-- Text AI details -->
+          <div class="card" role="region" aria-labelledby="text-features">
+            <h4 id="text-features">Text AI — Features</h4>
+            <ul>
+              <li>Summarization, intent detection, and classification</li>
+              <li>Embeddings for search and semantic matching</li>
+              <li>Context-aware multi-turn sessions</li>
+              <li>Custom fine-tuning and prompt templates</li>
+              <li>Audit logs and moderation hooks</li>
+            </ul>
+            <div style="margin-top:8px">
+              <button class="btn btn-ghost open-service" data-service="Text AI">See Examples</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick links to use-case templates -->
+      <section class="services" aria-labelledby="quick-templates-heading" style="margin-top:18px">
+        <div class="section-header">
+          <h3 id="quick-templates-heading">Quick Templates</h3>
+          <p class="section-sub">Launch a template in one click or preview an audio demo first.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-head"><div class="service-icon">📞</div><h4>Appointment scheduling</h4></div>
+            <p>Auto book, reschedule and confirm appointments with IVR and SMS fallback.</p>
+            <div class="service-actions">
+              <button class="btn btn-ghost open-case" data-case="Appointment scheduling">Preview</button>
+              <button class="btn btn-ghost" onclick="location.href='automation-tools.html'">Deploy</button>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-head"><div class="service-icon">💳</div><h4>Payment reminders</h4></div>
+            <p>Automated reminder flows with secure payment links and callback verification.</p>
+            <div class="service-actions">
+              <button class="btn btn-ghost open-case" data-case="Payment reminders">Preview</button>
+              <button class="btn btn-ghost" onclick="location.href='pricing.html'">Plans</button>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-head"><div class="service-icon">📦</div><h4>Delivery confirmation</h4></div>
+            <p>Confirm deliveries and capture recipient acknowledgement with voice confirmation.</p>
+            <div class="service-actions">
+              <button class="btn btn-ghost open-case" data-case="Delivery confirmation">Preview</button>
+              <button class="btn btn-ghost" onclick="location.href='contact.html'">Get Help</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="site-footer" role="contentinfo" style="margin-top:20px">
+        <div class="footer-inner">
+          <div>© Kaizen Automation Hub</div>
+          <div class="muted">Contact sales for enterprise plans</div>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Reusable modal shell (script.js will populate) -->
+  <div id="modal-root" class="modal-root" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Preview">
+      <button class="modal-close" aria-label="Close modal" data-close="true">&times;</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Hidden audio element used by the shared script -->
+  <audio id="demo-audio" preload="none"></audio>
+
+  <!-- Shared script -->
+  <script src="script.js" defer></script>
+</body>
+</html>
