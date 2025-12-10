@@ -13,7 +13,7 @@ export default defineConfig(async ({ mode }) => {
     metaImagesPlugin(),
   ];
 
-  // Add Replit-specific dev plugins only in dev mode on Replit
+  // Replit-specific dev plugins
   if (mode !== "production" && process.env.REPL_ID) {
     const cartographer = (await import("@replit/vite-plugin-cartographer")).cartographer;
     const devBanner = (await import("@replit/vite-plugin-dev-banner")).devBanner;
@@ -21,7 +21,7 @@ export default defineConfig(async ({ mode }) => {
   }
 
   return {
-    base: "/sachidax-ai-lab/", // <--- FIX for GitHub Pages paths
+    base: "/sachidax-ai-lab/", // important for GitHub Pages
     plugins,
     resolve: {
       alias: {
